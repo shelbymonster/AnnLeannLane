@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ann Leann Lane Store</title>
+  <style>
+    :root {
+      color-scheme: light;
+      font-family: Arial, sans-serif;
+    }
+    body {
+      margin: 0;
+      background: #faf7f2;
+      color: #2c2c2c;
+    }
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 24px;
+    }
+    .logo-space {
+      border: 2px dashed #c1b5a4;
+      background: #fff;
+      border-radius: 12px;
+      padding: 32px;
+      text-align: center;
+      font-size: 1.2rem;
+      margin-bottom: 28px;
+    }
+    h1, h2 {
+      margin-top: 0;
+    }
+    .items-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 16px;
+      margin-bottom: 32px;
+    }
+    .item-card {
+      background: #fff;
+      border: 1px solid #ece3d8;
+      border-radius: 10px;
+      padding: 16px;
+    }
+    .price {
+      font-weight: 700;
+    }
+    button {
+      margin-top: 8px;
+      border: 0;
+      border-radius: 6px;
+      background: #5a8f45;
+      color: #fff;
+      padding: 8px 12px;
+      cursor: pointer;
+    }
+    button:focus-visible {
+      outline: 3px solid #274c1c;
+      outline-offset: 2px;
+    }
+    .about {
+      background: #fff;
+      border-radius: 10px;
+      border: 1px solid #ece3d8;
+      padding: 16px;
+    }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <section class="logo-space" aria-label="Logo space">
+      <strong>Logo Space</strong><br />
+      Add your store logo here
+    </section>
+
+    <section aria-labelledby="store-items-title">
+      <h1 id="store-items-title">Shop Our Collection</h1>
+      <div class="items-grid">
+        <article class="item-card">
+          <h2>Lavender Candle</h2>
+          <p>Calming hand-poured soy candle.</p>
+          <p class="price">$12.00</p>
+          <button type="button" aria-label="Add Lavender Candle to cart">Add to Cart</button>
+        </article>
+        <article class="item-card">
+          <h2>Ceramic Mug</h2>
+          <p>Stoneware mug for coffee and tea.</p>
+          <p class="price">$18.00</p>
+          <button type="button" aria-label="Add Ceramic Mug to cart">Add to Cart</button>
+        </article>
+        <article class="item-card">
+          <h2>Linen Tote Bag</h2>
+          <p>Reusable tote with reinforced handles.</p>
+          <p class="price">$22.00</p>
+          <button type="button" aria-label="Add Linen Tote Bag to cart">Add to Cart</button>
+        </article>
+        <article class="item-card">
+          <h2>Honey Lip Balm</h2>
+          <p>Natural balm with beeswax and shea.</p>
+          <p class="price">$6.00</p>
+          <button type="button" aria-label="Add Honey Lip Balm to cart">Add to Cart</button>
+        </article>
+        <article class="item-card">
+          <h2>Herbal Tea Blend</h2>
+          <p>Loose-leaf blend for cozy evenings.</p>
+          <p class="price">$14.00</p>
+          <button type="button" aria-label="Add Herbal Tea Blend to cart">Add to Cart</button>
+        </article>
+        <article class="item-card">
+          <h2>Bath Salt Jar</h2>
+          <p>Mineral bath salts with eucalyptus.</p>
+          <p class="price">$16.00</p>
+          <button type="button" aria-label="Add Bath Salt Jar to cart">Add to Cart</button>
+        </article>
+      </div>
+    </section>
+
+    <section class="about" aria-labelledby="about-title">
+      <h2 id="about-title">About</h2>
+      <p>
+        Ann Leann Lane is a small shop focused on cozy home and self-care essentials.
+        We curate simple, quality items that make everyday moments feel special.
+      </p>
+    </section>
+  </main>
+</body>
+</html>
